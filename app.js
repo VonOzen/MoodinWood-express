@@ -3,6 +3,9 @@ const dotEnv = require('dotenv')
 const mongoose = require('mongoose')
 const app = express()
 
+app.set('views', './views')
+app.engine('html', require('ejs').renderFile)
+
 dotEnv.config()
 
 // Connect to DB
@@ -18,6 +21,11 @@ const postRoutes = require('./routes/posts')
 const woodRoutes = require('./routes/woods')
 const categoryRoutes = require('./routes/categories')
 const productRoutes = require('./routes/products')
+
+//Homepage
+app.get('/', (req, res) => {
+  res.render('index.html')
+})
 
 // Middlewares
 app.use(express.json())
