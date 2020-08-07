@@ -13,14 +13,20 @@ mongoose.connect(
 )
 
 // Routes
-const authRoute = require('./routes/auth')
-const postRoute = require('./routes/posts')
+const authRoutes = require('./routes/auth')
+const postRoutes = require('./routes/posts')
+const woodRoutes = require('./routes/woods')
+const categoryRoutes = require('./routes/categories')
+const productRoutes = require('./routes/products')
 
 // Middlewares
 app.use(express.json())
 // Routes Middlewares
-app.use('/api/user', authRoute)
-app.use('/api/posts', postRoute)
+app.use('/api/user', authRoutes)
+app.use('/api/posts', postRoutes)
+app.use('/api/woods', woodRoutes)
+app.use('/api/categories', categoryRoutes)
+app.use('/api/products', productRoutes)
 
 // Port listening
 app.listen(3000, () => console.log('Server up and running'))
