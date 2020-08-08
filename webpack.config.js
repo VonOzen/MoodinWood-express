@@ -88,6 +88,17 @@ module.exports = {
       {
         test: /\.(png|j?g|gif)$/,
         use: 'file-loader',
+      },
+      {
+        test: /\.(woff|woff2|ttf|otf|png|jpg|jpeg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'assets/'
+            }
+          }
+        ]
       }
     ]
   },

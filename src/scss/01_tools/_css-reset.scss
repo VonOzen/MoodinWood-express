@@ -1,0 +1,152 @@
+// Tools : Normalize
+// =================
+//
+/* http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+// stylelint-disable
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.2;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(black, 0);
+}
+
+@at-root {
+  @-ms-viewport {
+    width: device-width;
+  }
+}
+
+body {
+  @include font-smoothing(on);
+
+  font-family: $global-fontFamily;
+  font-weight: $global-fontWeightBase;
+  text-align: left;
+  color: $text-color;
+  background-color: $body-bg;
+  margin: 0;
+
+  &-is-popinOpen {
+    overflow: hidden;
+  }
+
+  @each $breakpoint, $sizes in $global-fontSizes {
+    @include media-breakpoint-up($breakpoint) {
+      font-size: map-get($sizes, 'font-size');
+      line-height: map-get($sizes, 'line-height') / map-get($sizes, 'font-size');
+    }
+  }
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+input,
+select,
+button,
+textarea {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: inherit;
+  font-size: 1rem;
+  white-space: normal;
+  padding: 0;
+  background: none;
+  border: 0;
+  margin: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font: inherit;
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+

@@ -1,0 +1,60 @@
+$form-margin-bot: rem(20px);
+
+.FormItem {
+  position: relative;
+  height: rem(50px);
+  margin-bottom: $form-margin-bot;
+}
+
+.FormItem-input {
+  height: 100%;
+  width: 100%;
+  color: $calypso;
+  padding-top: rem(20px);
+  outline: none;
+
+  &:focus,
+  &:valid {
+    + .FormItem-label {
+      .FormItem-floatLabel {
+        font-size: rem(14px);
+        color: $wedgewood;
+        transform: translateY(-120%);
+      }
+    }
+
+    + .FormItem-label::after {
+      transform: translateX(0%);
+    }
+  }
+}
+
+.FormItem-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid $half-baked;
+  pointer-events: none;
+
+  &::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid $wedgewood;
+    transform: translateX(-100%);
+    transition: transform $transition ease;
+  }
+}
+
+.FormItem-floatLabel {
+  position: absolute;
+  bottom: rem(5px);
+  left: 0;
+  color: $mine-shaft;
+  transition: all $transition ease;
+}

@@ -6,11 +6,13 @@ import * as PAGES from './pages'
 
 const App = () => {
   return (
-    <Router>
-      <Route exact path={ROUTES.LANDING} component={PAGES.LandingPage} />
-      <Route exact path={ROUTES.POSTS} component={PAGES.PostsPage} />
-      <Route exact path={ROUTES.PRODUCTS} component={PAGES.ProductsPage} />
-    </Router>
+    <div className="Page">
+      <Router>
+        <Route exact path={ROUTES.LANDING} component={PAGES.LandingPage} />
+        <Route exact path={ROUTES.POSTS} component={PAGES.PostsPage} />
+        <Route exact path={ROUTES.PRODUCTS} component={PAGES.ProductsPage} />
+      </Router>
+    </div>
   )
 }
 

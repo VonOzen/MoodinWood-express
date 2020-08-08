@@ -1,0 +1,8 @@
+$page-bg-color: $white;
+
+.Page {
+  position: relative;
+  max-width: $site-width;
+  background-color: $page-bg-color;
+  margin: 0 auto;
+}

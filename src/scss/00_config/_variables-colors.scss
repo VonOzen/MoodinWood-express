@@ -1,0 +1,52 @@
+// Config : Colors variables
+// =========================
+//
+
+// Debug
+// ------
+// background color debugging ftw
+/* stylelint-disable */
+$p: peachpuff !default;
+$r: rebeccapurple !default;
+$l: lightgreen !default;
+/* stylelint-enable */
+
+// Colors list
+// -----------
+// List all colors right here
+// Variables named using "Name that color" (http://chir.ag/projects/name-that-color/)
+$white: #fff !default;
+$black: #000 !default;
+
+// Grey variants
+$soft-peach: #f8f1f1 !default;
+$athens-gray: #ebecf0 !default;
+$dusty-gray: #989191;
+$mine-shaft: #252424 !default;
+
+// Client validated colors :
+$nile-blue: #172b4d !default;
+$vista-blue: #88cbb0 !default;
+$mountain-meadow: #189e67 !default;
+$fun-green: #006d41 !default;
+
+$half-baked: #93c2d6;
+$wedgewood: #407e99;
+$calypso: #286985;
+
+$falu-red: #871919 !default;
+$red-oxide: #640404 !default;
+
+// Message colors
+$invalid: $falu-red !default;
+$invalid-text: $red-oxide !default;
+$valid: $mountain-meadow !default;
+$valid-text: $fun-green !default;
+
+
+// Layout color
+// ------------
+// Put the colors listed in use
+// /!\ Don't use color name for your variables here
+$body-bg: $white;
+$text-color: $mine-shaft;
