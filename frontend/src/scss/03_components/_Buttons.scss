@@ -1,0 +1,60 @@
+.Button {
+  @extend %u-fontSemiBold;
+  appearance: none;
+  min-width: rem(200px);
+  font-family: inherit;
+  text-transform: uppercase;
+  padding: rem(15px) rem(30px);
+  border-radius: rem(5px);
+  margin: rem(15px) 0;
+  transition: all $transition ease;
+
+  &[disabled] {
+    opacity: 0.7;
+    cursor: auto;
+  }
+
+  &.is-primary {
+    color: $whitish;
+    background-color: $gable-green;
+
+    &:not([disabled]):hover,
+    &:not([disabled]):focus {
+      background-color: $firefly;
+    }
+
+    &.is-outlined {
+      color: $gable-green;
+      background-color: transparent;
+      border: 1px solid $gable-green;
+
+      &:not([disabled]):hover,
+      &:not([disabled]):focus {
+        color: $white;
+        background-color: $gable-green;
+      }
+    }
+  }
+
+  &.is-secondary {
+    color: $gable-green;
+    background-color: $di-serria;
+
+    &:not([disabled]):hover,
+    &:not([disabled]):focus {
+      background-color: $copper;
+    }
+
+    &.is-outlined {
+      color: $copper;
+      background-color: transparent;
+      border: 1px solid $copper;
+
+      &:not([disabled]):hover,
+      &:not([disabled]):focus {
+        color: $white;
+        background-color: $copper;
+      }
+    }
+  }
+}
