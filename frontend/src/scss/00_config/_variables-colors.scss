@@ -18,21 +18,20 @@ $l: lightgreen !default;
 $white: #fff !default;
 $black: #000 !default;
 
-// Grey variants
-$soft-peach: #f8f1f1 !default;
-$athens-gray: #ebecf0 !default;
-$dusty-gray: #989191;
-$mine-shaft: #252424 !default;
+$athens-gray: #ededee !default;
+$whitish: #fefefe !default;
 
-// Client validated colors :
-$nile-blue: #172b4d !default;
-$vista-blue: #88cbb0 !default;
-$mountain-meadow: #189e67 !default;
-$fun-green: #006d41 !default;
+$gable-green: #123132 !default;	// Main Primary color
+$spectra: #365859 !default;
+$te-papa-green: #1f3c3d !default;
+$firefly: #082324 !default;
+$holly: #011415 !default;
 
-$half-baked: #93c2d6;
-$wedgewood: #407e99;
-$calypso: #286985;
+$copper: #b88033 !default;	// Main Secondary color
+$peach-orange: #ffd397 !default;
+$di-serria: #d6a25b !default;
+$hawaiian-tan: #935f17 !default;
+$nutmeg-wood: #673c00 !default;
 
 $falu-red: #871919 !default;
 $red-oxide: #640404 !default;
@@ -40,13 +39,13 @@ $red-oxide: #640404 !default;
 // Message colors
 $invalid: $falu-red !default;
 $invalid-text: $red-oxide !default;
-$valid: $mountain-meadow !default;
-$valid-text: $fun-green !default;
+$valid: $spectra !default;
+$valid-text: $firefly !default;
 
 
 // Layout color
 // ------------
 // Put the colors listed in use
 // /!\ Don't use color name for your variables here
-$body-bg: $white;
-$text-color: $mine-shaft;
+$body-bg: $athens-gray;
+$text-color: $gable-green;

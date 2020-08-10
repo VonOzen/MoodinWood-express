@@ -10,7 +10,7 @@ $form-margin-bot: rem(20px);
 .FormItem-input {
   height: 100%;
   width: 100%;
-  color: $calypso;
+  color: $di-serria;
   padding-top: rem(20px);
   outline: none;
 
@@ -19,7 +19,7 @@ $form-margin-bot: rem(20px);
     + .FormItem-label {
       .FormItem-floatLabel {
         font-size: rem(14px);
-        color: $wedgewood;
+        color: $copper;
         transform: translateY(-120%);
       }
     }
@@ -36,7 +36,7 @@ $form-margin-bot: rem(20px);
   left: 0;
   height: 100%;
   width: 100%;
-  border-bottom: 1px solid $half-baked;
+  border-bottom: 1px solid $copper;
   pointer-events: none;
 
   &::after {
@@ -46,7 +46,7 @@ $form-margin-bot: rem(20px);
     content: '';
     height: 100%;
     width: 100%;
-    border-bottom: 3px solid $wedgewood;
+    border-bottom: 3px solid $copper;
     transform: translateX(-100%);
     transition: transform $transition ease;
   }
@@ -56,6 +56,6 @@ $form-margin-bot: rem(20px);
   position: absolute;
   bottom: rem(5px);
   left: 0;
-  color: $mine-shaft;
+  color: $hawaiian-tan;
   transition: all $transition ease;
 }
