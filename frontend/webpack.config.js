@@ -108,7 +108,7 @@ module.exports = {
       emitWarning: true,
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'views/index.html'),
+      template: path.resolve(__dirname, 'public/index.html'),
       filename: 'index.html',
     }),
     new MiniCssExtractPlugin({

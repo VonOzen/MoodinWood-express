@@ -3,6 +3,7 @@ $form-margin-bot: rem(20px);
 .FormItem {
   position: relative;
   height: rem(50px);
+  overflow: hidden;
   margin-bottom: $form-margin-bot;
 }
 
