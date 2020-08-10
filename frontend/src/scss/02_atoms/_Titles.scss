@@ -1,0 +1,54 @@
+// Main titles
+// -----------
+
+%u-h {
+  @extend %u-fontBold;
+}
+
+// Level 1
+%u-h1 {
+  @extend %u-h;
+  font-size: rem(40px);
+  line-height: 1.2;
+}
+
+// Level 2
+%u-h2 {
+  @extend %u-h;
+  font-size: rem(35px);
+  line-height: 1.2;
+}
+
+// Level 3
+%u-h3 {
+  @extend %u-h;
+  font-size: rem(30px);
+  line-height: 1.2;
+}
+
+// Level 4
+%u-h4 {
+  @extend %u-h;
+  font-size: rem(25px);
+  line-height: 1.5;
+}
+
+// Level 5
+%u-h5 {
+  @extend %u-h;
+  font-size: rem(20px);
+  line-height: 1.5;
+}
+
+// Level 6
+%u-h6 {
+  @extend %u-h;
+  font-size: rem(16px);
+  line-height: 1.5;
+}
+
+@for $i from 1 through 6 {
+  .u-h#{$i} {
+    @extend %u-h#{$i} !optional;
+  }
+}
