@@ -1,7 +1,8 @@
-import { SET_APP_IS_LOADING } from '../actions/appActions'
+import { SET_APP_IS_LOADING, SET_NAV_OPEN } from '../actions/appActions'
 
 const initialState = {
   isLoading: false,
+  isNavOpen: false,
 }
 
 const appReducer = (state = initialState, action) => {
@@ -10,6 +11,11 @@ const appReducer = (state = initialState, action) => {
       return {
         ...state,
         isLoading: action.payload,
+      }
+    case SET_NAV_OPEN:
+      return {
+        ...state,
+        isNavOpen: action.payload,
       }
     default:
       return state

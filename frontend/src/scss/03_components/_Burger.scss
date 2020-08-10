@@ -1,0 +1,109 @@
+.Burger {
+  position: relative;
+  height: rem(50px);
+  width: rem(50px);
+  
+  button {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    border: 1px solid rgba($soft-peach, 0);
+    transition: border-color $transition ease;
+
+    &:focus,
+    &:hover {
+      border-color: rgba($soft-peach, 1);
+    }
+  }
+
+  &.is-open {
+    .Burger-part {
+      animation-name: disappearAndRotate;
+    }
+
+    .Burger-part,
+    .Burger-part::before,
+    .Burger-part::after {
+      animation-duration: $transition;
+      animation-fill-mode: forwards;
+    }
+
+    .Burger-part::before {
+      animation-name: rotateClockwise;
+    }
+
+    .Burger-part::after {
+      animation-name: rotateCounterClockwise;
+    }
+  }
+}
+
+.Burger-part {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  height: rem(3px);
+  width: rem(30px);
+  background-color: $soft-peach;
+  transform: translate(-50%, -50%);
+  transition: all $transition ease;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: rem(3px);
+    background-color: $soft-peach;
+  }
+
+  &::before {
+    top: rem(-10px);
+  }
+
+  &::after {
+    bottom: rem(-10px)
+  }
+}
+
+@keyframes rotateClockwise {
+  0% {
+    top: rem(-10px);
+    transform: rotate(0);
+  }
+
+  50% {
+    top: (0);
+    transform: rotate(0);
+  }
+
+  100% {
+    top: 0;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotateCounterClockwise {
+  0% {
+    bottom: rem(-10px);
+    transform: rotate(0);
+  }
+
+  50% {
+    bottom: (0);
+    transform: rotate(0);
+  }
+
+  100% {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes disappearAndRotate {
+  100% {
+    background-color: transparent;
+  }
+}
