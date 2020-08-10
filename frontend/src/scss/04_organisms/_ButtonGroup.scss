@@ -1,0 +1,9 @@
+.ButtonGroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .Button {
+    margin: rem(15px);
+  }
+}
