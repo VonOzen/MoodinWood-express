@@ -1,0 +1,16 @@
+.Logo-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $copper;
+}
+
+.Logo-text {
+  @extend %u-fontBold;
+  font-size: rem(16px);
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin-left: rem(10px);
+}

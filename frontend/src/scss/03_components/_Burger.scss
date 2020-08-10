@@ -37,7 +37,7 @@
   display: block;
   height: rem(3px);
   width: rem(30px);
-  background-color: $di-serria;
+  background-color: $copper;
   transform: translate(-50%, -50%);
   transition: all $transition ease;
 
@@ -48,7 +48,7 @@
     content: '';
     height: rem(3px);
     width: 100%;
-    background-color: $di-serria;
+    background-color: $copper;
   }
 
   &::before {

@@ -1,11 +1,9 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { Link } from 'react-router-dom'
-import { LANDING } from '../../../constants/routes'
-
-import MiwLogo from '../../../assets/svg/miw-logo.svg'
-import Burger from './Burger'
 import { setNavOpen } from '../../../js/actions/appActions'
+
+import Burger from './Burger'
+import Logo from './Logo'
 
 const NavBar = () => {
 
@@ -20,12 +18,7 @@ const NavBar = () => {
   return (
     <nav className="NavBar" role="navigation">
       <ul className="NavBar-list">
-        <li className="Nav-item Logo">
-          <Link to={LANDING}>
-            <span className="u-srOnly">Retour accueil</span>
-            <MiwLogo className="Logo"/>
-          </Link>
-        </li>
+        <Logo />
         <Burger
           isNavOpen={isNavOpen}
           handleClick={handleClick}

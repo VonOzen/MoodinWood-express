@@ -1,12 +1,14 @@
 .NavBar {
-  height: rem(60px);
+  @include block-shadow();
+  position: sticky;
+  height: $header-height;
   padding: 0 rem(10px);
-  background-color: $gable-green;
+  background-color: $athens-gray;
   
   .Logo {
     height: rem(40px);
     width: rem(40px);
-    fill: $di-serria;
+    fill: $copper;
   }
 }
 

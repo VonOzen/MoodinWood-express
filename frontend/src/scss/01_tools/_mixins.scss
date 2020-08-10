@@ -96,3 +96,7 @@
   background: none;
   border: 0;
 }
+
+@mixin block-shadow {
+  box-shadow: 0 rem(3px) rem(13px) 0 rgba($black, 1);
+}
