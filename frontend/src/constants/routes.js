@@ -1,4 +1,5 @@
 export const LANDING = '/'
-export const PRODUCTS = '/products'
-export const POSTS = '/posts'
+export const PRODUCTS = '/creations'
+export const POSTS = '/actualites'
+export const CONTACT = '/contact'
 export const ADMIN = '/admin'

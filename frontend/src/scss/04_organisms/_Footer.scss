@@ -1,3 +1,72 @@
 .Footer {
+  color: $di-serria;
+  padding: rem(30px) rem(15px);
   background-color: $gable-green;
+
+  a {
+    color: inherit;
+
+    &:focus,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  @include media-breakpoint-up('md') {
+    padding: rem(50px) rem(30px);
+  }
+}
+
+.Footer-inner {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  @include media-breakpoint-up('md') {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.Footer-socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-color: rgba($whitish, 0.3);
+}
+
+.Footer-icon {
+  fill: $di-serria;
+  margin: 0 rem(15px);
+}
+
+.Footer-logo {
+  fill: $athens-gray;
+  height: rem(120px);
+  width: rem(120px);
+  margin-bottom: rem(10px);
+  opacity: 0.3;
+}
+
+.Footer-icon {
+  height: rem(50px);
+  width: rem(50px);
+  transition: opacity $transition ease;
+}
+
+.Footer-socialsIcons {
+  &:hover {
+    .Footer-icon {
+      opacity: 0.4;
+    }
+  }
+
+  .Footer-icon {
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
 }
