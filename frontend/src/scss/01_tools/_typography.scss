@@ -23,17 +23,17 @@
 }
 
 
-$titillium-light: 300 !default;
-$titillium-regular: 400 !default;
-$titillium-semiBold: 600 !default;
-$titillium-bold: 700 !default;
+$barlow-light: 300 !default;
+$barlow-regular: 400 !default;
+$barlow-semiBold: 600 !default;
+$barlow-bold: 700 !default;
 
-/* $notosans-thin: 200 !default;
-$notosans-light: 300 !default;
-$notosans-regular: 400 !default;
-$notosans-bold: 700 !default; */
+$playfair-thin: 200 !default;
+$playfair-light: 300 !default;
+$playfair-regular: 400 !default;
+$playfair-bold: 700 !default;
 
-$heebo-black: 700 !default;
+$staatliches: 700 !default;
 
 %u-fontSmoothing {
   @include font-smoothing('on');
@@ -44,45 +44,45 @@ $heebo-black: 700 !default;
 }
 
 %u-fontLight {
-  font-weight: $titillium-light;
+  font-weight: $barlow-light;
 }
 
 %u-fontRegular {
-  font-weight: $titillium-regular;
+  font-weight: $barlow-regular;
 }
 
 %u-fontBold {
-  font-weight: $titillium-bold;
+  font-weight: $barlow-bold;
 }
 
 %u-fontSemiBold {
-  font-weight: $titillium-semiBold;
+  font-weight: $barlow-semiBold;
 }
 
 %u-fontExtraBold {
-  font-family: $secondary-fontFamily;
-  font-weight: $heebo-black;
+  font-family: $ternary-fontFamily;
+  font-weight: $staatliches;
 }
 
-/* %u-headingFontThin {
+%u-headingFontThin {
   font-family: $secondary-fontFamily;
-  font-weight: $notosans-thin;
+  font-weight: $playfair-thin;
 }
 
 %u-headingFontLight {
   font-family: $secondary-fontFamily;
-  font-weight: $notosans-light;
+  font-weight: $playfair-light;
 }
 
 %u-headingFontRegular {
   font-family: $secondary-fontFamily;
-  font-weight: $notosans-regular;
+  font-weight: $playfair-regular;
 }
 
 %u-headingFontBold {
   font-family: $secondary-fontFamily;
-  font-weight: $notosans-bold;
-} */
+  font-weight: $playfair-bold;
+}
 
 %u-fontResetWeight {
   font-weight: inherit !important;

@@ -16,10 +16,11 @@ $class-noJs: '.no-js' !default;
 // Base
 $root-fontSize: 62.5% !default;
 
-$global-fontFamily: Titillium-web, Helvetica, Arial, 'Trebuchet MS', sans-serif !default;
+$global-fontFamily: Barlow, Helvetica, Arial, 'Trebuchet MS', sans-serif !default;
 $global-fontWeightBase: 300 !default;
 
-$secondary-fontFamily: Heebo, Titillium-web, Helvetica, Arial, 'Trebuchet MS', sans-serif !default;
+$secondary-fontFamily: 'Playfair Display', Barlow, Helvetica, Arial, 'Trebuchet MS', sans-serif !default;
+$ternary-fontFamily: Staatliches, Barlow, Helvetica, Arial, 'Trebuchet MS', sans-serif !default;
 
 // font-size line-height
 $global-fontSizes: (
@@ -30,8 +31,8 @@ $global-fontSizes: (
 
 // Layout variables
 // ----------------
-$site-width: rem(1440px) !default;
-$site-inner-width: rem(1200px) !default;
+// $site-width: rem(1440px) !default;
+$site-inner-width: rem(1440px) !default;
 $site-inner-small-width: rem(900px) !default;
 $header-height: rem(60px) !default;
 

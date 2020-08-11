@@ -1,53 +1,141 @@
-// Config : Webfonts
+// Config :s
 // =================
 // Fonts import, placeholders
 
 @font-face {
-  font-family: 'Titillium-web';
-  font-display: swap;
-  font-weight: 300;
-  font-style: normal;
-  src: local('titilliumweb-light'), local('titilliumweb-light'),
-    url('#{$assets-url}fonts/titilliumweb-light.woff2') format('woff2'),
-    url('#{$assets-url}fonts/titilliumweb-light.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Titillium-web';
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
-  src: local('titilliumweb-regular'), local('titilliumweb-regular'),
-    url('#{$assets-url}fonts/titilliumweb-regular.woff2') format('woff2'),
-    url('#{$assets-url}fonts/titilliumweb-regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Titillium-web';
-  font-display: swap;
-  font-weight: 400;
-  font-style: italic;
-  src: local('titilliumweb-italic'), local('titilliumweb-italic'),
-    url('#{$assets-url}fonts/titilliumweb-italic.woff2') format('woff2'),
-    url('#{$assets-url}fonts/titilliumweb-italic.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Titillium-web';
-  font-display: swap;
-  font-weight: 600;
-  font-style: normal;
-  src: local('titilliumweb-semibold'), local('titilliumweb-semibold'),
-    url('#{$assets-url}fonts/titilliumweb-semibold.woff2') format('woff2'),
-    url('#{$assets-url}fonts/titilliumweb-semibold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Heebo';
-  font-display: swap;
+  font-family: 'Barlow';
+  src:
+    local('barlow-bold'), local('barlow-bold'),
+    url('#{$assets-url}fonts/barlow-bold.woff2') format('woff2'),
+    url('#{$assets-url}fonts/barlow-bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
-  src: local('heebo-black'), local('heebo-black'),
-    url('#{$assets-url}fonts/heebo-black.woff2') format('woff2'),
-    url('#{$assets-url}fonts/heebo-black.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src:
+    local('barlow-extrabold'), local('barlow-extrabold'),
+    url('#{$assets-url}fonts/barlow-extrabold.woff2') format('woff2'),
+    url('#{$assets-url}fonts/barlow-extrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src:
+    local('barlow-italic'), local('barlow-italic'),
+    url('#{$assets-url}fonts/barlow-italic.woff2') format('woff2'),
+    url('#{$assets-url}fonts/barlow-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src:
+    local('barlow-light'), local('barlow-light'),
+    url('#{$assets-url}fonts/barlow-light.woff2') format('woff2'),
+    url('#{$assets-url}fonts/barlow-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src:
+    local('barlow-bold'), local('barlow-bold'),
+    url('#{$assets-url}fonts/barlow-bold.woff2') format('woff2'),
+    url('#{$assets-url}fonts/barlow-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src:
+    local('barlow-regular'), local('barlow-regular'),
+    url('#{$assets-url}fonts/barlow-regular.woff2') format('woff2'),
+    url('#{$assets-url}fonts/barlow-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src:
+    local('barlow-semibold'), local('barlow-semibold'),
+    url('#{$assets-url}fonts/barlow-semibold.woff2') format('woff2'),
+    url('#{$assets-url}fonts/barlow-semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src:
+    local('barlow-semibolditalic'), local('barlow-semibolditalic'),
+    url('#{$assets-url}fonts/barlow-semibolditalic.woff2') format('woff2'),
+    url('#{$assets-url}fonts/barlow-semibolditalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Staatliches';
+  src: local('staatliches-regular'), local('staatliches-regular'),
+    url('#{$assets-url}fonts/Staatliches-Regular.woff2') format('woff2'),
+    url('#{$assets-url}fonts/Staatliches-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('playfair-display'), local('playfair-display'), 
+    url('#{$assets-url}fonts/PlayfairDisplay-SemiBoldItalic.woff2') format('woff2'),
+    url('#{$assets-url}fonts/PlayfairDisplay-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('playfair-display'), local('playfair-display'), 
+    url('#{$assets-url}fonts/PlayfairDisplay-SemiBold.woff2') format('woff2'),
+    url('#{$assets-url}fonts/PlayfairDisplay-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('playfair-display'), local('playfair-display'), 
+    url('#{$assets-url}fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('#{$assets-url}fonts/PlayfairDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('playfair-display'), local('playfair-display'), 
+    url('#{$assets-url}fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+    url('#{$assets-url}fonts/PlayfairDisplay-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
