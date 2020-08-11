@@ -1,5 +1,5 @@
 .Button {
-  @extend %u-fontSemiBold;
+  @extend %u-fontRegular;
   appearance: none;
   min-width: rem(200px);
   font-family: inherit;
@@ -53,7 +53,7 @@
 
       &:not([disabled]):hover,
       &:not([disabled]):focus {
-        color: $white;
+        color: $firefly;
         background-color: $copper;
       }
     }

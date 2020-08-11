@@ -1,27 +1,20 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { setNavOpen } from '../../../js/actions/appActions'
+import { useSelector } from 'react-redux'
 
 import Burger from './Burger'
 import Logo from './Logo'
 
-const NavBar = () => {
+const NavBar = ({ handlePusher }) => {
 
-  const dispatch = useDispatch()
-  const isNavOpen = useSelector(state => state.app.isNavOpen)
-
-  const handleClick = () => {
-    console.log('coucou')
-    dispatch(setNavOpen(!isNavOpen))
-  }
+  const isPusherDeployed = useSelector(state => state.app.isPusherDeployed)
 
   return (
     <nav className="NavBar" role="navigation">
-      <ul className="NavBar-list">
+      <ul className="NavBar-list Container">
         <Logo />
         <Burger
-          isNavOpen={isNavOpen}
-          handleClick={handleClick}
+          isPusherDeployed={isPusherDeployed}
+          handlePusher={handlePusher}
         />
       </ul>
     </nav>

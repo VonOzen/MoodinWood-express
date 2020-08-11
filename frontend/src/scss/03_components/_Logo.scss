@@ -8,8 +8,8 @@
 }
 
 .Logo-text {
-  @extend %u-fontBold;
-  font-size: rem(16px);
+  @extend %u-fontSemiBold;
+  font-size: rem(18px);
   text-decoration: none;
   letter-spacing: 2px;
   margin-left: rem(10px);

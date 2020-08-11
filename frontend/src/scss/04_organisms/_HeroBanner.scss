@@ -1,6 +1,11 @@
 .HeroBanner {
-  max-height: rem(800px);
+  max-height: rem(300px);
   width: 100%;
+
+  @include media-breakpoint-up('md') {
+    height: calc(100vh - #{$header-height});
+    max-height: none;
+  }
 }
 
 .HeroBanner-wrapper {
@@ -36,13 +41,16 @@
 
   .Logo-brandSvg {
     height: 40%;
+    min-height: rem(100px);
     width: 40%;
+    min-width: rem(100px);
     fill: $whitish;
     opacity: 0;
     animation: reveal 2s ease forwards 0.2s;
   }
 
   .HeroBanner-subtitle {
+    @extend %u-fontLight;
     flex-shrink: 0;
     display: none;
     text-align: center;
