@@ -1,0 +1,7 @@
+.Section {
+  padding: rem(30px) rem(15px);
+
+  @include media-breakpoint-up('md') {
+    padding: rem(50px) rem(30px);
+  }
+}
