@@ -1,9 +1,13 @@
 .NavBar {
   @include block-shadow();
-  position: sticky;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   height: $header-height;
   padding: 0 rem(10px);
   background-color: $athens-gray;
+  z-index: 2;
   
   .Logo {
     height: rem(40px);
@@ -17,4 +21,5 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  padding: 0 rem(15px);
 }

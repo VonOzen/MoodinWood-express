@@ -1,0 +1,19 @@
+.Backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh;
+  background-color: rgba($black, 0.6);
+  opacity: 0;
+  transition: opacity $transition ease;
+  transition-delay: 0.5s;
+  z-index: 1;
+  pointer-events: none;
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: all;
+  }
+}

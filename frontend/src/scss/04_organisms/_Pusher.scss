@@ -26,7 +26,7 @@
   left: 0;
   min-height: 100vh;
   background-color: rgba($firefly, 0.6);
-  transform: translateX(100%);
+  opacity: 1;
   transition: transform $transition ease;
   z-index: 2;
 }

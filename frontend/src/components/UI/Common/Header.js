@@ -1,24 +1,20 @@
 import React from 'react'
 import NavBar from './NavBar'
-import Pusher from './Pusher'
 import { useSelector, useDispatch } from 'react-redux'
-import { setPusherDeployed } from '../../../js/actions/appActions'
+import { setNavigationOpen } from '../../../js/actions/appActions'
 
 const Header = () => {
   const dispatch = useDispatch()
-  const isPusherDeployed = useSelector(state => state.app.isPusherDeployed)
+  const isNavigationOpen = useSelector(state => state.app.isNavigationOpen)
 
-  const handlePusher = () => {
-    dispatch(setPusherDeployed(!isPusherDeployed))
+  const handleToggleNav = () => {
+    dispatch(setNavigationOpen(!isNavigationOpen))
   }
 
   return (
     <div className="Header">
-      <NavBar handlePusher={handlePusher} />
-      <Pusher
-        isDeployed={isPusherDeployed}
-        handlePusher={handlePusher}
-      />
+      <NavBar handleToggleNav={handleToggleNav} />
+      <div className={`Backdrop${isNavigationOpen ? ' is-open' : ''}`} onClick={handleToggleNav} />
     </div>  
   )
 }
