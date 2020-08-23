@@ -36,7 +36,7 @@ const NavBar = ({ handleToggleNav }) => {
             path: ROUTES.POSTS,
           },
           {
-            label: 'Nous contacter',
+            label: 'Contact',
             path: ROUTES.CONTACT,
           },
         ]}

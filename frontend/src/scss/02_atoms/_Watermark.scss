@@ -1,0 +1,36 @@
+.Watermark {
+  position: absolute;
+  top: rem(-20px);
+  font-family: $ternary-fontFamily;
+  font-size: rem(100px);
+  letter-spacing: 0.2ch;
+  z-index: 3;
+  pointer-events: none;
+
+  &.has-whiteBg {
+    color: $athens-gray;
+  }
+
+  &.has-greenBg {
+    color: $firefly;
+  }
+
+  &.has-grayBg {
+    color: $mischka;
+  }
+
+  &.has-copperBg {
+    color: $copper;
+  }
+
+  &.is-vertical {
+    right: rem(-20px);
+    bottom: 0;
+    writing-mode: vertical-lr;
+  }
+
+  @include media-breakpoint-up('md') {
+    top: rem(-80px);
+    font-size: rem(200px);
+  }
+}

@@ -30,19 +30,19 @@ $links-anim-delay: 0.15s;
 }
 
 .NavLinks-link {
-  font-size: rem(18px);
+  font-size: rem(20px);
   text-transform: uppercase;
   text-decoration: none;
   color: $di-serria;
   padding: rem(50px);
 
-  @include media-breakpoint-up('md') {
-    font-size: rem(25px);
-  }
-
   &:hover,
   &:focus {
     text-decoration: underline;
+  }
+
+  @include media-breakpoint-up('md') {
+    font-size: rem(28px);
   }
 }
 
@@ -50,6 +50,7 @@ $links-anim-delay: 0.15s;
   margin: rem(25px) 0;
   opacity: 0;
   transition: opacity $transition ease;
+  z-index: 4;
 
   @for $i from 1 through $links-number {
     &:nth-child(#{$i}) {
@@ -72,6 +73,7 @@ $links-anim-delay: 0.15s;
     height: rem(50px);
     width: rem(50px);
     margin: 0 rem(10px);
+    pointer-events: none;
   }
 }
 
