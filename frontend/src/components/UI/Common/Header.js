@@ -12,10 +12,10 @@ const Header = () => {
   }
 
   return (
-    <div className="Header">
+    <header className="Header">
       <NavBar handleToggleNav={handleToggleNav} />
       <div className={`Backdrop${isNavigationOpen ? ' is-open' : ''}`} onClick={handleToggleNav} />
-    </div>  
+    </header>
   )
 }
 

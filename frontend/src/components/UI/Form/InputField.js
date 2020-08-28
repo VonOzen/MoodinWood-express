@@ -10,6 +10,7 @@ const InputField = ({
   required = false,
   maxLength = 255,
   minLength = 0,
+  defaultValue,
 }) => (
   <div className="FormItem">
     <input
@@ -21,10 +22,11 @@ const InputField = ({
       required={required}
       maxLength={maxLength}
       minLength={minLength}
+      defaultValue={defaultValue}
     />
     <label
       className="FormItem-label"
-      htmlFor={id}  
+      htmlFor={id}
     >
       <span className="FormItem-floatLabel">
         { label }

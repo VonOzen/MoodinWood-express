@@ -14,9 +14,12 @@ const App = () => {
       <Router>
         <Header />
 
-        <Route exact path={ROUTES.LANDING} component={PAGES.LandingPage} />
-        <Route exact path={ROUTES.POSTS} component={PAGES.PostsPage} />
-        <Route exact path={ROUTES.PRODUCTS} component={PAGES.ProductsPage} />
+        <main className="Main">
+          <Route exact path={ROUTES.LANDING} component={PAGES.LandingPage} />
+          <Route exact path={ROUTES.POSTS} component={PAGES.PostsPage} />
+          <Route exact path={ROUTES.PRODUCTS} component={PAGES.ProductsPage} />
+          <Route path={ROUTES.ADMIN_LOGIN} component={PAGES.AdminLoginPage} />
+        </main>
 
         <Footer />
       </Router>

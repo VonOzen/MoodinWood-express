@@ -45,10 +45,10 @@ router.post('/login', async (req, res) => {
   if (error) return res.status(400).send(error.details)
 
   // Checking user's existence
-  const user = await User.findOne({ email: req.body.email })
+  const user = await User.findOne({ email: req.body['admin-email'] })
   if (!user) return res.status(400).send('Invalid credentials')
 
-  const validPassword = await bcrypt.compare(req.body.password, user.password)
+  const validPassword = await bcrypt.compare(req.body.body['admin-password'], user.password)
   if (!validPassword) return res.status(400).send('Invalid credentials')
 
   // Create and assign JWT
